@@ -1,0 +1,84 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Fill in as much as you can —
+        the more detail, the faster the fix.
+
+  - type: input
+    id: version
+    attributes:
+      label: Theme Studio version
+      description: Run `./theme-studio.sh --version` in the extracted ThemeStudio folder.
+      placeholder: e.g. Theme Studio 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: distro
+    attributes:
+      label: Distro and version
+      placeholder: e.g. Ubuntu 26.04 LTS
+    validations:
+      required: true
+
+  - type: input
+    id: gnome
+    attributes:
+      label: GNOME Shell version
+      description: Run `gnome-shell --version`.
+      placeholder: e.g. GNOME Shell 50.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app?
+      options:
+        - Looks
+        - GTK Themes
+        - Icon Packs
+        - Shell Themes
+        - Uninstall / Reset
+        - App startup / GUI
+        - Installer (theme-studio.sh)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem. What did you do, what happened, what did you expect?
+      placeholder: |
+        1. I opened the app and went to ...
+        2. I clicked ...
+        3. This happened: ...
+        4. I expected: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Terminal output / screenshots
+      description: |
+        If you ran the app from a terminal, paste any output here.
+        Drag and drop screenshots into this box.
+      render: text
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and this has not been reported before.
+          required: true
+        - label: I am not posting license keys, purchase details, or personal information.
+          required: true

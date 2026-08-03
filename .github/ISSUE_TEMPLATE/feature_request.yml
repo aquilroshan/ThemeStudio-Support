@@ -1,0 +1,43 @@
+name: Feature request
+description: An idea for something new
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us what you'd like to see in Theme Studio.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the feature and the problem it would solve for you.
+      placeholder: |
+        I'd like Theme Studio to ...
+        because right now I have to ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app would this affect?
+      options:
+        - Looks
+        - GTK Themes
+        - Icon Packs
+        - Shell Themes
+        - Uninstall / Reset
+        - App startup / GUI
+        - Installer (theme-studio.sh)
+        - New theme / icon pack / look content
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Mockups, links to similar features in other apps, etc.
