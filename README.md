@@ -1,7 +1,7 @@
 # Theme Studio — Support & Issue Tracker
 
 This is the public issue tracker for **Theme Studio**, a desktop theming app for
-Ubuntu / GNOME. The app's source code is private and lives elsewhere — this
+Ubuntu and Fedora (GNOME). The app's source code is private and lives elsewhere — this
 repository exists only so customers can report bugs and request features.
 
 ## Report a bug or request a feature
@@ -17,7 +17,7 @@ repository exists only so customers can report bugs and request features.
 Please have this information ready (the bug template asks for it):
 
 - **Theme Studio version** — run `./theme-studio.sh --version`
-- **Distro and version** — e.g. Ubuntu 26.04 LTS
+- **Distro and version** — e.g. Ubuntu 26.04 LTS or Fedora 45 Workstation
 - **GNOME Shell version** — run `gnome-shell --version`
 - **What you did, what happened, what you expected**
 

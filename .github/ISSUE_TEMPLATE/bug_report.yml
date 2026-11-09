@@ -22,7 +22,7 @@ body:
     id: distro
     attributes:
       label: Distro and version
-      placeholder: e.g. Ubuntu 26.04 LTS
+      placeholder: e.g. Ubuntu 26.04 LTS or Fedora 45 Workstation
     validations:
       required: true
 
